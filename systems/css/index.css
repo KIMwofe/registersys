@@ -1,0 +1,137 @@
+
+/* 头部 */
+#title{
+    height: 62px;
+    width:85%;
+    position: fixed;
+    top:0;
+    right: 0;
+    background: #263238;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    z-index: 1;
+ 
+}
+.t_nav{
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    line-height: 52px;
+}
+.t_nav:hover{
+    background: #3685c8;
+}
+.adminImg{
+    position: absolute;
+    right: 57px;
+    height: 66px;;
+    display: flex;
+    width: 132px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.adminImg img{
+    width: 15px;
+    height: 15px;
+}
+.action{
+    position: absolute;
+    width: 132px;
+    text-align: center;
+    top: 63px;
+    right: 0px;
+    line-height: 35px;
+    background: #263238;
+    display: none;
+    box-shadow: 0 2px 5px #263238;
+}
+.action h1{
+    background: #fff;
+    color: #1e282c;
+    font-size: 14px;
+
+}
+.warp{
+    background: #FFF;
+    width: 85%;
+    height: 100%;
+    position: fixed;
+    top: 53px;
+    right: 0;
+    display: inline-block;
+}
+/* 内容 */
+.warp_inner{
+    width: 80%;
+    height: 100%;
+    background: #fff;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.warp_inner h1{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 100px;
+}
+.warp_counte{
+    margin: 103px auto;
+}
+.warp_counte h1{
+    font-size: 64px;
+}
+.warp_counte h1:nth-child(2){
+    letter-spacing: 66px;
+}
+/* 修改管理者信息 */
+.updata_user{
+    width: 300px;
+    margin: 100px auto;
+}
+.updata_user form{
+    width: 300px;
+    padding: 50px;
+    box-sizing: border-box;
+    font-size: 15px;
+    
+}
+.updata_user form input{
+    border-radius: 69px;
+    width: 200px;
+    height: 29px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+#sub{
+   margin-top: 10px;
+}
+.updata_user h1{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 20px;
+}
+/* 学生信息表 */
+.stu_mge{
+    width: 100%;
+    display: none;
+}
+.table table{
+    width: 100%;
+    border-collapse:collapse;
+    border:none;
+
+}
+.table tr td{
+    /* border-top: 1px solid #1e282c; */
+    border-bottom: 1px solid #1e282c;
+    width: 100px;
+    height: 50px;
+    border-collapse:collapse;
+    text-align: center;
+    font-size: 15px;
+}
