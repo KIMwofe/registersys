@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>管理员登陆</title>
+		<link rel="stylesheet" type="text/css" href="login/css/styles.css"/>
+	</head>
+	<body>
+		<div id="login">
+				<div class="wrapper">
+					<div class="container">
+						<h1>宿舍管理系统登录</h1>
+						<form id="form">
+							<input type="text" placeholder="用户名" id="text" /><br />
+							<input type="password" placeholder="密码" class="pwd" /><br />
+							<div class="radio">
+							   学生:<input type="radio" id="stu"  name="p"/>&nbsp;&nbsp;&nbsp; 
+								管理员 :<input type="radio"  id="admin" checked="check" name="p"/>
+							  </div>
+								<input type="button" value="登录" class="login" id="login-button"/> 
+								<input type="button" value="注册" class="login" id="register" />
+						</form>
+					</div>
+				</div>
+		</div>
+	</body>
+</html>
+<script src="login/js/jquery-1.11.0.min.js"></script>
+<script src="login/js/login.js"></script>
+ <script type="text/javascript">
+	var register = document.getElementById("register");
+	register.onclick = function(){
+		location.href="register.html";
+	}
+</script>

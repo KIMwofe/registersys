@@ -1,0 +1,87 @@
+.unusedBox{
+    width: 90%;
+    height: 200px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+#right_nav{
+    position: fixed;
+    width: 100px;
+    padding: 5px;
+    box-sizing: border-box;
+    background: #fff;
+    right: 0;
+    z-index: 50;
+    top: 40%;
+    /* -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); */
+    box-shadow: 0 0 4px rgba(0,0,0,.14);
+}
+#right_nav a:nth-child(1){
+    background: url("../images/zfb.png") no-repeat  center 8px;
+    background-size:32px;
+}
+#right_nav a:nth-child(2){
+    background: url("../images/wechat.png") no-repeat  center 8px;
+    background-size:32px;
+    border: none;
+}
+#right_nav a:hover{
+    color:#ea4141;
+}
+.r_shoping{
+    display: block;
+    width: 90px;
+    height: 70px;
+    font-size: 14px;
+    
+    text-align: center;
+    border-bottom: 1px #efefef solid;
+    overflow: hidden;
+}
+.r_shoping p{
+    margin-top: 42px;
+}
+.app_aload{
+    width: 267px;
+    height: 398px;
+    color: #ea4141;
+    background: #fff;
+    position: absolute;
+    padding: 0 25px;
+    background: url("../images/IMG_0286.JPG") no-repeat center;
+    background-size: cover;
+    box-sizing: border-box;
+    top: -97px;
+    right: 130px;
+    box-shadow: 0 0 4px rgba(0,0,0,.14);
+    display: none;
+    
+}
+.app_aload1{
+    width: 267px;
+    height: 398px;
+    color: #ea4141;
+    background: #fff;
+    position: absolute;
+    padding: 0 25px;
+    background: url("../images/IMG_0285.JPG") no-repeat center;
+    background-size: cover;
+    box-sizing: border-box;
+    top: -97px;
+    right: 130px;
+    box-shadow: 0 0 4px rgba(0,0,0,.14);
+    display: none;
+    
+}
+.s_right{
+    width:0;
+    height:0;
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent;
+    border-left:20px solid pink;  
+    position: absolute;
+    top:146px;
+    right:-20px; 
+        
+} 

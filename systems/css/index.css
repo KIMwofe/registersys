@@ -1,0 +1,369 @@
+
+/* 头部 */
+#title{
+    height: 62px;
+    width:85%;
+    position: fixed;
+    top:0;
+    right: 0;
+    background: #263238;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    z-index: 1;
+ 
+}
+.ttle{
+    display: inline-block;
+    position: fixed;
+    font-size: 22px;
+    font-weight: 700;
+    z-index: 999;
+    color: #fff;
+    top:14px;
+    left: 98px;
+}
+.adminImg{
+    position: absolute;
+    right: 57px;
+    height: 66px;;
+    display: flex;
+    width: 132px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.adminImg img{
+    width: 15px;
+    height: 15px;
+}
+.action{
+    position: absolute;
+    width: 132px;
+    text-align: center;
+    top: 63px;
+    right: 0px;
+    line-height: 35px;
+    background: #263238;
+    display: none;
+    box-shadow: 0 2px 5px #263238;
+}
+.action h1{
+    background: #fff;
+    color: #1e282c;
+    font-size: 14px;
+
+}
+.warp{
+    background: #FFF;
+    width: 85%;
+    height: 1000%;
+    position: absolute;
+    top: 53px;
+    right: 0;
+    display: inline-block;
+}
+/* 内容 */
+.warp_inner{
+    width: 98%;
+    height: 100%;
+    background: #fff;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.warp_inner h1{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 54px;
+    letter-spacing: 52px;
+}
+.warp_counte{
+    margin: 103px auto;
+    /* display: none; */
+}
+.warp_counte h1{
+    font-size: 64px;
+}
+.warp_counte h1:nth-child(2){
+    letter-spacing: 54px;
+}
+/* 修改管理者信息 */
+.updata_user{
+    width: 300px;
+    margin: 100px auto;
+}
+.updata_user form{
+    width: 300px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    
+}
+.updata_user form input{
+    border-radius: 69px;
+    width: 257px;
+    height: 49px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+#sub{
+   margin-top: 10px;
+}
+.updata_user h1{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 20px;
+}
+.iconImg{
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    margin-left: 1.5px;
+}
+/* 学生信息表 */
+.stu_mge{
+    width: 100%;
+    /* display: none; */
+}
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 14px 15px;
+}
+.fl-table td {
+     width: 70px; 
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+.fl-table1 td {
+     width: 102px; 
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    width: 77px;
+    color: #ffffff;
+    background: #e82626;
+    border-radius: 10px 10px 0 0 ;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+#minBtn{
+    background: #e82626;
+    width: 50px;
+    height: 20px;
+    border: 0;
+    color: #FFF;
+    padding: 0 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#barcon{
+    font-size: 15px;
+    float: right;
+    margin: 26px;
+}
+/* 信息录入 */
+.addStu{
+    width: 100%;
+    font-size: 15px;
+}
+.addStu form ul{
+    border: 1px dotted #1e282c;
+    background: #EEE9E9;
+}
+.addStu form ul li{
+    width: 100%;
+    padding: 12px;
+    padding-left:386px;
+    box-sizing: border-box;
+    line-height: 20px;
+    margin-bottom: 5px;
+    border-bottom: 1px dotted #1e282c;
+    background: #FFF;
+}
+.addStu form ul li input{
+    border: 1px solid #1e282c;
+   border-radius: 10px;
+   padding-left: 10px;
+}
+.addStu form ul li:nth-child(1){
+    background: #E0E0E0;
+}
+.addStu form ul li:nth-child(10) input{
+    width: 104px;
+    text-align: center;
+   padding:2px 0;
+    box-sizing: border-box;
+}
+.addStu form ul li:nth-child(11) input{
+    width: 104px;
+    text-align: center;
+   padding:2px 0;
+    box-sizing: border-box;
+}
+.addStu form ul li:nth-child(12) input{
+    width: 104px;
+    text-align: center;
+   padding:2px 0;
+    box-sizing: border-box;
+}
+.in{
+    width: 104px;
+    text-align: center;
+   padding:2px 0;
+    box-sizing: border-box;
+}
+/* 信息查询 */
+.stuSh{
+    width: 100% ;
+}
+.stuSh form{
+    padding: 5% 35%;
+    border: 1px seagreen double;
+    border-bottom: 0;
+}
+.stuSh form h1{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 21px;
+}
+.stuSh form input{
+    border: 1px slategrey solid;
+    border-radius: 10px;
+    margin-right: 20px;
+} 
+.stuSh form input:nth-child(2){
+    padding-left:10px;
+    box-sizing: border-box;
+    margin-left: 19%;
+} 
+.stuSh form input:nth-child(3){
+    padding: 0 10px;
+    cursor: pointer;
+}
+.list input{
+    padding-left: 0 !important;
+}
+.btn{
+    display: inline-block;
+    background: #e82626;
+    width: 33px;
+    height: 20px;
+    border: 0;
+    color: #FFF;
+    padding: 0 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.update{
+    position: fixed;
+    width: 82%;
+    top: 25%;
+    right: 30px;
+    z-index: 10;
+}
+.xx{
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top: -10.5px;
+    cursor: pointer;
+}
